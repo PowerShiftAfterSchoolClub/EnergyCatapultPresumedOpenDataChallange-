@@ -3,13 +3,15 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+DROP TABLE [dbo].[Assets]
+GO
 CREATE TABLE [dbo].[Assets](
 	[assetID] int IDENTITY(1,1) PRIMARY KEY,
     [assetName] [nvarchar](50) NOT NULL,
     [assetType]  [nvarchar](50) NOT NULL,
     [locationName] [nvarchar](50) NULL,
-    [locationLatitude] [decimal](10, 3 NULL,
-    [locationLongitude] [decimal](10, 3 NULL,
+    [locationLatitude] [decimal](10, 3) NULL,
+    [locationLongitude] [decimal](10, 3) NULL,
     [capacityMWh] [decimal](10, 3) NULL,
     [powerMW] [decimal](10, 3) NULL,
    	[createdDate] [datetime] NOT NULL default CURRENT_TIMESTAMP,
@@ -54,3 +56,45 @@ INSERT INTO [dbo].[Assets](assetName, assetType, locationName, locationLatitude,
 VALUES ('WEATHERSTATION_06','WEATHERSTATION', 'Weather Sation 6',50,-3.75)
 GO
 
+
+/****** Object:  Table [dbo].[Tasks]  Populate the Task List*****/
+DROP TABLE [dbo].[Tasks]
+GO
+CREATE TABLE [dbo].[Tasks](
+	[taskID] int IDENTITY(1,1) PRIMARY KEY,
+    [taskName] [nvarchar](50) NOT NULL,
+    [fromDate] [date] NOT NULL,
+    [toDate]  [date] NOT NULL,
+   	[createdDate] [datetime] NOT NULL default CURRENT_TIMESTAMP,
+	[createdBy] [nvarchar](255) NOT NULL DEFAULT CURRENT_USER
+)
+
+GO
+
+INSERT INTO [dbo].[Tasks](taskName, fromDate, toDate)
+VALUES ('task0','2018-07-23','2018-07-29')
+GO
+INSERT INTO [dbo].[Tasks](taskName, fromDate, toDate)
+VALUES ('task1','2018-10-16','2018-10-22')
+GO
+INSERT INTO [dbo].[Tasks](taskName, fromDate, toDate)
+VALUES ('task2','2019-03-10','2019-03-16')
+GO
+INSERT INTO [dbo].[Tasks](taskName, fromDate, toDate)
+VALUES ('task3','2019-12-18','2019-12-24')
+GO
+INSERT INTO [dbo].[Tasks](taskName, fromDate, toDate)
+VALUES ('task4','2020-07-23','2020-07-09')
+GO
+
+/****** Object:  Table [dbo].[rawDemand]  Populate the Raw Demand Data*****/
+CREATE TABLE [dbo].[rawDemand]
+(
+    [rawDemandRecordID] int IDENTITY(1,1) PRIMARY KEY,
+    [rawDemandDateTimeUTC] [datetime] NOT NULL,
+    [rawDemandMW] [decimal](10, 3) NULL,
+    [sourceTask] [nvarchar](50) NOT NULL,
+    [createdDate] [datetime] NOT NULL default CURRENT_TIMESTAMP,
+	[createdBy] [nvarchar](255) NOT NULL DEFAULT CURRENT_USER
+)
+GO
