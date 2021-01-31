@@ -88,7 +88,7 @@ VALUES ('task4','2020-07-23','2020-07-09')
 GO
 
 /****** Object:  Table [dbo].[rawDemand]  Populate the Raw Demand Data*****/
-CREATE TABLE [dbo].[rawDemand]
+/***CREATE TABLE [dbo].[rawDemand]
 (
     [rawDemandRecordID] int IDENTITY(1,1) PRIMARY KEY,
     [rawDemandDateTimeUTC] [datetime] NOT NULL,
