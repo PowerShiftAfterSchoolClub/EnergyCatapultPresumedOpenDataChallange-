@@ -188,3 +188,41 @@ FROM    [dbo].[viewtask0TrainingCalendarDemandWeather_train_set0_HH]
 DROP VIEW [dbo].[viewtask0TrainingCalendarDemandWeather_train_set0_HH]
 GO
 
+/***** Add the Weather Forecast into the Task 0 Forecast Calendar **********/
+CREATE VIEW temp AS 
+SELECT a.[dateTimeUTC]
+      ,[temp_location3]
+      ,[temp_location6]
+      ,[temp_location2]
+      ,[temp_location4]
+      ,[temp_location5]
+      ,[temp_location1]
+      ,[solar_location3]
+      ,[solar_location6]
+      ,[solar_location2]
+      ,[solar_location4]
+      ,[solar_location5]
+      ,[solar_location1]
+      ,[summerWinter]
+      ,[dateTimeLocal]
+      ,[year]
+      ,[monthNum]
+      ,[monthName]
+      ,[weekNumber]
+      ,[dayOfWeek]
+      ,[dayOfWeekNumber]
+      ,[hourText]
+      ,[hourNumber]
+      ,[settlementPeriod]
+      ,[timeOfDayLocal]
+      ,[bankHoliday]
+      ,[workingDay]
+  FROM [dbo].[task0forecastCalendarMap] a, weather_train_set0_HH b
+  WHERE a.dateTimeUTC = b.dateTimeUTC
+GO
+SELECT  *
+INTO    task0ForecastCalendarMapWithForecastWeatherHH
+FROM    temp
+DROP VIEW temp
+GO
+
