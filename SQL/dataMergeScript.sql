@@ -16,9 +16,9 @@ SELECT [dateTimeUTC]
       ,[timeOfDayLocal]
       ,[bankHoliday]
       ,[workingDay]
-  INTO    task0ForecastCalendarMap
+  INTO    task1ForecastCalendarMap
   FROM [dbo].[CalendarMap]
-  WHERE [dateTimeLocal] => '2018-07-23' AND [dateTimeLocal] < '2018-07-30'
+  WHERE [dateTimeLocal] >= '2018-10-16' AND [dateTimeLocal] < '2018-10-23'
   GO
 
 
@@ -70,124 +70,6 @@ DROP VIEW [dbo].[viewHHWeather_train_set0]
 GO
 
 
-/***** Add the Weather Data into the Training Calendar **********/
-CREATE VIEW viewtask0TrainingCalendarWeather_train_set0_HH AS
-SELECT a.[dateTimeUTC]
-      ,[temp_location3]
-      ,[temp_location6]
-      ,[temp_location2]
-      ,[temp_location4]
-      ,[temp_location5]
-      ,[temp_location1]
-      ,[solar_location3]
-      ,[solar_location6]
-      ,[solar_location2]
-      ,[solar_location4]
-      ,[solar_location5]
-      ,[solar_location1]
-	  ,[summerWinter]
-      ,[dateTimeLocal]
-      ,[year]
-      ,[monthNum]
-      ,[monthName]
-      ,[weekNumber]
-      ,[dayOfWeek]
-      ,[dayOfWeekNumber]
-      ,[hourText]
-      ,[hourNumber]
-      ,[settlementPeriod]
-      ,[timeOfDayLocal]
-      ,[bankHoliday]
-      ,[workingDay]
-	  
-FROM  [dbo].[weather_train_set0_HH] a, [dbo].[pv_train_set0] b
-WHERE a.dateTimeUTC = b.dateTimeUTC
-GO
-SELECT  *
-INTO    task0TrainingCalendarWeather_train_set0_HH
-FROM    viewtask0TrainingCalendarWeather_train_set0_HH
-DROP VIEW [dbo].[viewtask0TrainingCalendarWeather_train_set0_HH]
-GO
-
-
-/***** Add the PV Data into the Weather Training Calendar **********/
-CREATE VIEW viewtask0TrainingCalendarPVWeather_train_set0_HH AS
-SELECT a.[dateTimeUTC]
-	   ,[rawPV_power_mw]
-      ,[temp_location3]
-      ,[temp_location6]
-      ,[temp_location2]
-      ,[temp_location4]
-      ,[temp_location5]
-      ,[temp_location1]
-      ,[solar_location3]
-      ,[solar_location6]
-      ,[solar_location2]
-      ,[solar_location4]
-      ,[solar_location5]
-      ,[solar_location1]
-	  ,[summerWinter]
-      ,[dateTimeLocal]
-      ,[year]
-      ,[monthNum]
-      ,[monthName]
-      ,[weekNumber]
-      ,[dayOfWeek]
-      ,[dayOfWeekNumber]
-      ,[hourText]
-      ,[hourNumber]
-      ,[settlementPeriod]
-      ,[timeOfDayLocal]
-      ,[bankHoliday]
-      ,[workingDay]
-FROM  task0TrainingCalWeatherHH a, [dbo].[pv_train_set0] b
-WHERE a.dateTimeUTC = b.dateTimeUTC
-GO
-SELECT  *
-INTO    task0TrainingCalendarPVWeatherHH
-FROM    [dbo].[viewtask0TrainingCalendarPVWeather_train_set0_HH]
-DROP VIEW [dbo].[viewtask0TrainingCalendarPVWeather_train_set0_HH]
-GO
-
-/***** Add the Demand Data into the Weather Training Calendar **********/
-CREATE VIEW viewtask0TrainingCalendarDemandWeather_train_set0_HH AS
-SELECT a.[dateTimeUTC]
-	   ,[rawDemand_mw]
-      ,[temp_location3]
-      ,[temp_location6]
-      ,[temp_location2]
-      ,[temp_location4]
-      ,[temp_location5]
-      ,[temp_location1]
-      ,[solar_location3]
-      ,[solar_location6]
-      ,[solar_location2]
-      ,[solar_location4]
-      ,[solar_location5]
-      ,[solar_location1]
-	  ,[summerWinter]
-      ,[dateTimeLocal]
-      ,[year]
-      ,[monthNum]
-      ,[monthName]
-      ,[weekNumber]
-      ,[dayOfWeek]
-      ,[dayOfWeekNumber]
-      ,[hourText]
-      ,[hourNumber]
-      ,[settlementPeriod]
-      ,[timeOfDayLocal]
-      ,[bankHoliday]
-      ,[workingDay]
-FROM  task0TrainingCalWeatherHH a, [dbo].[demand_train_set0] b
-WHERE a.dateTimeUTC = b.dateTimeUTC
-GO
-SELECT  *
-INTO    task0TrainingCalendarDemandWeatherHH
-FROM    [dbo].[viewtask0TrainingCalendarDemandWeather_train_set0_HH]
-DROP VIEW [dbo].[viewtask0TrainingCalendarDemandWeather_train_set0_HH]
-GO
-
 /***** Add the Weather Forecast into the Task 0 Forecast Calendar **********/
 CREATE VIEW temp AS 
 SELECT a.[dateTimeUTC]
@@ -217,12 +99,133 @@ SELECT a.[dateTimeUTC]
       ,[timeOfDayLocal]
       ,[bankHoliday]
       ,[workingDay]
-  FROM [dbo].[task0forecastCalendarMap] a, weather_train_set0_HH b
+  FROM [dbo].[task1ForecastCalendarMap] a, weather_train_set1_HH b
   WHERE a.dateTimeUTC = b.dateTimeUTC
 GO
 SELECT  *
-INTO    task0ForecastCalendarMapWithForecastWeatherHH
+INTO    task1ForecastCalendarMapWithForecastWeatherHH
 FROM    temp
 DROP VIEW temp
 GO
+
+
+
+/***** Add the Weather Forecast into the Task Forecast Calendar **********/
+CREATE VIEW temp AS 
+SELECT a.[dateTimeUTC]
+      ,[temp_location3]
+      ,[temp_location6]
+      ,[temp_location2]
+      ,[temp_location4]
+      ,[temp_location5]
+      ,[temp_location1]
+      ,[solar_location3]
+      ,[solar_location6]
+      ,[solar_location2]
+      ,[solar_location4]
+      ,[solar_location5]
+      ,[solar_location1]
+      ,[summerWinter]
+      ,[dateTimeLocal]
+      ,[year]
+      ,[monthNum]
+      ,[monthName]
+      ,[weekNumber]
+      ,[dayOfWeek]
+      ,[dayOfWeekNumber]
+      ,[hourText]
+      ,[hourNumber]
+      ,[settlementPeriod]
+      ,[timeOfDayLocal]
+      ,[bankHoliday]
+      ,[workingDay]
+  FROM [dbo].[task1TrainingCalendarMap] a, weather_train_set1_HH b
+  WHERE a.dateTimeUTC = b.dateTimeUTC
+GO
+SELECT  *
+INTO    task1TrainingCalWeatherHH
+FROM    temp
+DROP VIEW temp
+GO
+
+
+/***** Add the PV Data into the Weather Training Calendar **********/
+CREATE VIEW viewtask1TrainingCalendarPVWeather_train_set1_HH AS
+SELECT a.[dateTimeUTC]
+	   ,[pv_power_mw]
+      ,[temp_location3]
+      ,[temp_location6]
+      ,[temp_location2]
+      ,[temp_location4]
+      ,[temp_location5]
+      ,[temp_location1]
+      ,[solar_location3]
+      ,[solar_location6]
+      ,[solar_location2]
+      ,[solar_location4]
+      ,[solar_location5]
+      ,[solar_location1]
+	  ,[summerWinter]
+      ,[dateTimeLocal]
+      ,[year]
+      ,[monthNum]
+      ,[monthName]
+      ,[weekNumber]
+      ,[dayOfWeek]
+      ,[dayOfWeekNumber]
+      ,[hourText]
+      ,[hourNumber]
+      ,[settlementPeriod]
+      ,[timeOfDayLocal]
+      ,[bankHoliday]
+      ,[workingDay]
+FROM  [dbo].[task1TrainingCalWeatherHH] a, [dbo].[pv_train_set1] b
+WHERE a.dateTimeUTC = b.[datetime]
+GO
+SELECT  *
+INTO    task1TrainingCalendarPVWeatherHH
+FROM    [dbo].[viewtask1TrainingCalendarPVWeather_train_set1_HH]
+DROP VIEW [dbo].[viewtask1TrainingCalendarPVWeather_train_set1_HH]
+GO
+
+
+/***** Add the Demand Data into the Weather Training Calendar **********/
+CREATE VIEW viewtask1TrainingCalendarDemandWeather_train_set1_HH AS
+SELECT a.[dateTimeUTC]
+	   ,[demand_mw]
+      ,[temp_location3]
+      ,[temp_location6]
+      ,[temp_location2]
+      ,[temp_location4]
+      ,[temp_location5]
+      ,[temp_location1]
+      ,[solar_location3]
+      ,[solar_location6]
+      ,[solar_location2]
+      ,[solar_location4]
+      ,[solar_location5]
+      ,[solar_location1]
+	  ,[summerWinter]
+      ,[dateTimeLocal]
+      ,[year]
+      ,[monthNum]
+      ,[monthName]
+      ,[weekNumber]
+      ,[dayOfWeek]
+      ,[dayOfWeekNumber]
+      ,[hourText]
+      ,[hourNumber]
+      ,[settlementPeriod]
+      ,[timeOfDayLocal]
+      ,[bankHoliday]
+      ,[workingDay]
+FROM  task1TrainingCalWeatherHH a, [dbo].[demand_train_set1] b
+WHERE a.dateTimeUTC = b.[datetime]
+GO
+SELECT  *
+INTO    task1TrainingCalendarDemandWeatherHH
+FROM    [dbo].[viewtask1TrainingCalendarDemandWeather_train_set1_HH]
+DROP VIEW [dbo].[viewtask1TrainingCalendarDemandWeather_train_set1_HH]
+GO
+
 
