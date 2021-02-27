@@ -16,9 +16,9 @@ SELECT [dateTimeUTC]
       ,[timeOfDayLocal]
       ,[bankHoliday]
       ,[workingDay]
-  INTO    task1ForecastCalendarMap
+  INTO    task2ForecastCalendarMap
   FROM [dbo].[CalendarMap]
-  WHERE [dateTimeLocal] >= '2018-10-16' AND [dateTimeLocal] < '2018-10-23'
+  WHERE [dateTimeLocal] >= '2019-03-10' AND [dateTimeLocal] < '2019-03-17'
   GO
 
 
@@ -228,4 +228,36 @@ FROM    [dbo].[viewtask1TrainingCalendarDemandWeather_train_set1_HH]
 DROP VIEW [dbo].[viewtask1TrainingCalendarDemandWeather_train_set1_HH]
 GO
 
+
+/***** Consolidate the Forecasts Inputs by Tasks  **********/
+SELECT [dateTimeUTC]
+      ,[temp_location3]
+      ,[temp_location6]
+      ,[temp_location2]
+      ,[temp_location4]
+      ,[temp_location5]
+      ,[temp_location1]
+      ,[solar_location3]
+      ,[solar_location6]
+      ,[solar_location2]
+      ,[solar_location4]
+      ,[solar_location5]
+      ,[solar_location1]
+      ,[summerWinter]
+      ,[dateTimeLocal]
+      ,[year]
+      ,[monthNum]
+      ,[monthName]
+      ,[weekNumber]
+      ,[dayOfWeek]
+      ,[dayOfWeekNumber]
+      ,[hourText]
+      ,[hourNumber]
+      ,[settlementPeriod]
+      ,[timeOfDayLocal]
+      ,[bankHoliday]
+      ,[workingDay]
+  INTO    FORECASTInputsByTask
+  FROM [dbo].[task0ForecastCalendarMapWithForecastWeatherHH]
+  GO
 
