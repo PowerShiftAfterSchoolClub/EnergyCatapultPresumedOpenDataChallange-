@@ -61,12 +61,7 @@ The Electric Dream Forecasters are Bhanu Duggal, James Law, Jon Gill, Richard De
 Working evenings and weekends, the team wanted to explore Machine Learning, brush up on some coding skills and explore automation and BI reporting.  
 ​
 
-In the spirit of Open Data and collaboration, we wanted to make our results and method open to the public via;
-
-- Embedded power BI report allowing you to explore challenge data and our results 
-- Embedded PowerPoint presentation describing our approach to the challenge
-- Our pubic Git Hub repository
-
+In the spirit of Open Data and collaboration, we wanted to make our results and method open to the public via this repository and <a href="https://tbowcutt.wixsite.com/podchallange">Our POD Website</a>
 
 <!-- GETTING STARTED -->
 ## Getting Started
