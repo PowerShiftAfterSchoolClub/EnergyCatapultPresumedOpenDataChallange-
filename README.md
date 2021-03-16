@@ -15,7 +15,7 @@
     <img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="33%" height="33%">
   </a>
 
-  <h3 align="center">Electric Dream Forecasters - PoD Data Science Challange</h3>
+  <h3 align="center">Electric Dream Forecasters - POD Data Science Challange</h3>
 
   <p align="center">
     <a href="https://tbowcutt.wixsite.com/podchallange">View Website</a>
@@ -64,12 +64,12 @@ The Electric Dream Forecasters are Bhanu Duggal, James Law, Jon Gill, Richard De
 
 Working evenings and weekends, the team wanted to explore Machine Learning, brush up on some coding skills and explore automation and BI reporting.  
 ​
-
 In the spirit of Open Data and collaboration, we wanted to make our results and method open to the public via this repository and <a href="https://tbowcutt.wixsite.com/podchallange">Our POD Website</a>
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Solution Design
 
+<img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/technicalDesign.JPG" alt="Logo" width="100%" height="100%">
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
@@ -98,20 +98,6 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 
 
