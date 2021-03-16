@@ -53,7 +53,7 @@ Presumed Open Data is a Western Power Distribution (WPD) project, in partnership
 
 The challenge  requires participants to utilise sub-hourly data over several years to design an optimal schedule for a battery storage device to simultaneously reduce peak demands and maximise the use of solar photovoltaic generation. The datasets consists of distribution network demand, solar PV generation outputs and weather data from several sites.
 
-  <p align="center">
+  <p align="left">
     <a href="https://www.westernpower.co.uk/pod-data-science-challenge">More about the challange</a>
   </p>
 
