@@ -83,7 +83,7 @@ A bespoke solution was created for the purpose of the challenge. An SQL database
     </li>
 	<li>
         <li><a href="#Our Team">PLANNING PACK:</a></li>
-    </li>
+
     <li>
       <a href="#Solution Design">SOURCE DATA:</a>
      </li>
