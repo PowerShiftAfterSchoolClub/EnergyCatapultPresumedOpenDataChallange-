@@ -79,10 +79,10 @@ A bespoke solution was created for the purpose of the challenge. An SQL database
   <summary>Repository Overview</summary>
   <ol>
     <li>
-      <a href="#about-the-project">WPD BRIEF: </a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/WPD%20Brief">WPD BRIEF: Describes the Challange </a>
     </li>
 	<li>
-        <a href="#Our Team">PLANNING PACK:</a>
+        <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/PLANNING%20PACK">PLANNING PACK: Describes Our Approach to the Challange</a>
     </li>
     <li>
       <a href="#Solution Design">SOURCE DATA:</a>
