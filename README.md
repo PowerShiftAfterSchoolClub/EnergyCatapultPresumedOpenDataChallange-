@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="150" height="80">
   </a>
 
   <h3 align="center">Electric Dream Forecasters - PoD Data Science Challange</h3>
@@ -40,22 +40,12 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Our Team</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -66,24 +56,24 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+POD Data Science Challenge
+Presumed Open Data is a Western Power Distribution (WPD) project, in partnership with Energy Systems Catapult and Centre for Sustainable Energy, which is demonstrating the value created by increasing the visibility and availability of energy data. 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+The challenge  requires participants to utilise sub-hourly data over several years to design an optimal schedule for a battery storage device to simultaneously reduce peak demands and maximise the use of solar photovoltaic generation. The datasets consists of distribution network demand, solar PV generation outputs and weather data from several sites.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+### Our Team
 
-### Built With
+The Electric Dream Forecasters are Bhanu Duggal, James Law, Jon Gill, Richard Devenport and Tom Bowcutt. 
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+Working evenings and weekends, the team wanted to explore Machine Learning, brush up on some coding skills and explore automation and BI reporting.  
+​
 
+In the spirit of Open Data and collaboration, we wanted to make our results and method open to the public via;
+
+- Embedded power BI report allowing you to explore challenge data and our results 
+- Embedded PowerPoint presentation describing our approach to the challenge
+- Our pubic Git Hub repository
 
 
 <!-- GETTING STARTED -->
