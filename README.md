@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="150" height="80">
+    <img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="33%" height="33%">
   </a>
 
   <h3 align="center">Electric Dream Forecasters - PoD Data Science Challange</h3>
