@@ -54,7 +54,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<img src="<img src="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/blob/main/POWER%20BI/IMAGES/aurapower-image-34.jpg" alt="Logo" width="150" height="80">" alt="Logo" width="150" height="80">
 
 POD Data Science Challenge
 Presumed Open Data is a Western Power Distribution (WPD) project, in partnership with Energy Systems Catapult and Centre for Sustainable Energy, which is demonstrating the value created by increasing the visibility and availability of energy data. 
