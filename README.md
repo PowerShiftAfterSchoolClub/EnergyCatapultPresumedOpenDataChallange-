@@ -63,6 +63,7 @@ The challenge  requires participants to utilise sub-hourly data over several yea
 The Electric Dream Forecasters are Bhanu Duggal, James Law, Jon Gill, Richard Devenport and Tom Bowcutt. 
 
 Working evenings and weekends, the team wanted to explore Machine Learning, brush up on some coding skills and explore automation and BI reporting.  
+
 ​
 In the spirit of Open Data and collaboration, we wanted to make our results and method open to the public via this repository and <a href="https://tbowcutt.wixsite.com/podchallange">Our POD Website</a>
 
@@ -85,20 +86,20 @@ A bespoke solution was created for the purpose of the challenge. An SQL database
         <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/PLANNING%20PACK">PLANNING PACK: Describes Our Approach to the Challange</a>
     </li>
     <li>
-      <a href="#Solution Design">SOURCE DATA:</a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/SOURCE_DATA">SOURCE DATA: Raw task data</a>
      </li>
 	     <li>
-      <a href="#Solution Design">
-RESULTS:</a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/RESULTS">
+RESULTS: Our Results for the varrious Tasks</a>
      </li>
 	     <li>
-      <a href="#Solution Design">SQL: </a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/SQL">SQL: Scripts for setup and data preparation</a>
      </li>
 	     <li>
-      <a href="#Solution Design">POWER BI:</a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/POWER%20BI">POWER BI: Data Visualisation Report</a>
      </li>
 	     <li>
-      <a href="#Solution Design">FORECAST MODEL API: </a>
+      <a href="https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-/tree/main/FORECAST%20MODEL%20API">FORECAST MODEL API: Details of APIs for interacting with the forecast model </a>
      </li>
   </ol>
 </details>
