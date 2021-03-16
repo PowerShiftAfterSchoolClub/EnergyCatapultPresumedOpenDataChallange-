@@ -80,7 +80,7 @@ TO DO
 <!-- CONTACT -->
 ## Contact
 
-Tom Bowcutt - [@your_twitter](https://www.linkedin.com/in/tom-bowcutt-42655113/?originalSubdomain=uk) - email@example.com
+Tom Bowcutt - [@linkedin](https://www.linkedin.com/in/tom-bowcutt-42655113/?originalSubdomain=uk)
 
 Project Link: [https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-](https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-)
 
