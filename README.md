@@ -80,28 +80,29 @@ A bespoke solution was created for the purpose of the challenge. An SQL database
   <ol>
     <li>
       <a href="#about-the-project">WPD BRIEF: </a>
-      <ul>
+    </li>
+	<li>
         <li><a href="#Our Team">PLANNING PACK:</a></li>
-      </ul>
     </li>
     <li>
       <a href="#Solution Design">SOURCE DATA:</a>
-      <ul>
+     </li>
+	     <li>
+      <a href="#Solution Design">
+RESULTS:</a>
+     </li>
+	     <li>
+      <a href="#Solution Design">SQL: </a>
+     </li>
+	     <li>
+      <a href="#Solution Design">POWER BI:</a>
+     </li>
+	     <li>
+      <a href="#Solution Design">FORECAST MODEL API: </a>
+     </li>
   </ol>
 </details>
 
-
-
-
-
-
-RESULTS:
-
-SQL: 
-
-POWER BI:
-
-FORECAST MODEL API: 
 
 <!-- CONTACT -->
 ## Contact
