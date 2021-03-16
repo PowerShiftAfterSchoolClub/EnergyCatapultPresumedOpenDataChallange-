@@ -30,13 +30,13 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#Our Team">Our Team</a></li>
-      </ul>
-    </li>
+      </li>
+        <li>
+		<a href="#Our Team">Our Team</a>
+		</li>
     <li>
       <a href="#Solution Design">Solution Design</a>
-      <ul>
+      </li>
   </ol>
 </details>
 
