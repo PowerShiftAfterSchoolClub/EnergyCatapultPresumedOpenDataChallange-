@@ -31,11 +31,11 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Our Team</a></li>
+        <li><a href="#Our Team">Our Team</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Solution Design">Solution Design</a>
       <ul>
   </ol>
 </details>
