@@ -80,9 +80,9 @@ TO DO
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tom Bowcutt - [@your_twitter](https://www.linkedin.com/in/tom-bowcutt-42655113/?originalSubdomain=uk) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-)
+Project Link: [https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-](https://github.com/PowerShiftAfterSchoolClub/EnergyCatapultPresumedOpenDataChallange-)
 
 
 
