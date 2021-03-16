@@ -74,8 +74,34 @@ A bespoke solution was created for the purpose of the challenge. An SQL database
 
 ### Repository Description
 
-TO DO
 
+<details open="open">
+  <summary>Repository Overview</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">WPD BRIEF: </a>
+      <ul>
+        <li><a href="#Our Team">PLANNING PACK:</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Solution Design">SOURCE DATA:</a>
+      <ul>
+  </ol>
+</details>
+
+
+
+
+
+
+RESULTS:
+
+SQL: 
+
+POWER BI:
+
+FORECAST MODEL API: 
 
 <!-- CONTACT -->
 ## Contact
